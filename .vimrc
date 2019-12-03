@@ -34,10 +34,10 @@ if has('nvim')
   exe "nnoremap <C-h> ".norm.moveFocusLeft
   exe "nnoremap <C-l> ".norm.moveFocusRight
 
-  exe "tnoremap ^k ".norm.moveFocusUp.i
-  exe "tnoremap ^j ".norm.moveFocusDown.i
-  exe "tnoremap ^h ".norm.moveFocusLeft.i
-  exe "tnoremap ^l ".norm.moveFocusRight.i
+  exe "tnoremap <Esc><C-k> ".norm.moveFocusUp.i
+  exe "tnoremap <Esc><C-j> ".norm.moveFocusDown.i
+  exe "tnoremap <Esc><C-h> ".norm.moveFocusLeft.i
+  exe "tnoremap <Esc><C-l> ".norm.moveFocusRight.i
   exe "nnoremap <leader>f :vsp<Enter>".norm.moveFocusLeft.":q<Enter>"
   exe "nnoremap <leader><leader> :vsp <bar> term<Enter>".i
   exe "nnoremap <leader>/ :sp <bar> term<Enter>".i
